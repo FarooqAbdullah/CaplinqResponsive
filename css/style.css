@@ -49,6 +49,17 @@ body
 	margin-top:5px;
 }
 
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+	border-bottom:0;
+}
+
 nav.main_navigation {
   background-color: #c43426;
   background:linear-gradient(#9D0A0E 43%, #540405 100%);
