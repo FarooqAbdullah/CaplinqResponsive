@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,11 +46,11 @@
                                 <form>
                                     <div class="tabbable tabs-left">
                                         <ul class="nav nav-tabs">
-                                            <li class="active"><a href="#tab1" data-toggle="tab">Sign in</a></li>
-                                            <li><a href="#tab2" data-toggle="tab">Registration</a></li>
+                                            <li class="active"><a href="#signin" data-toggle="tab">Sign in</a></li>
+                                            <li><a href="#registration" data-toggle="tab">Registration</a></li>
                                         </ul>
-                                        <div class="tab-content">
-                                            <div class="tab-pane active" id="tab1">
+                                        <div class="tab-content sign-in">
+                                            <div class="tab-pane active" id="signin">
                                                 <div class="row col-md-12">
                                                     <h4 class="signinheading">Sign into your account</h4>
                                                     <p class="signinpara">Only signed in users will see discount codes and have
@@ -63,17 +62,17 @@
                                                             <form role="form">
                                                                 <label for="email" class="signinlabel">Email</label>
                                                                 <br>
-                                                                <input type="email" class=" inputsignin form-control" name="" value="">
+                                                                <input type="email" id="email" class="inputsignin form-control" name="" value="">
                                                                 <br>
                                                                 <label for="password" class="signinlabel">Password<a href="#" class="passwordforgot">&nbsp;Forgot your password?</a></label>
                                                                 <br>
-                                                                <input type="password" class="inputsignin form-control" name="" value="">
+                                                                <input type="password" id="password" class="inputsignin form-control" name="" value="">
                                                                 <br>
                                                                 <label for="checkbox" class="signinlabelcheckbox"><input type="checkbox"> Remember me</label>
                                                                 <br>
-                                                                <button type="button" class="btn btn-default signinbutton">Sign in&nbsp;>></button>
+                                                                <button type="button" id="checkbox" class="btn btn-default signinbutton">Sign in&nbsp;>></button>
                                                                 <br>
-                                                                <label for="noaccount" class="signinlabel">No account?<a href="#" class="noaccount">&nbsp;Start here</a> </label>
+                                                                <label class="signinlabel">No account?<a href="#" class="noaccount">&nbsp;Start here</a> </label>
                                                             </form>
                                                         </div>
                                                     </div>
@@ -86,7 +85,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane" id="tab2">
+                                            <div class="tab-pane" id="registration">
                                                 <h4 class="signinheading">Register for a new account</h4>
                                                 <p class="signinpara">It's fast, free & secure. Only registered users can see
                                                     discount codes and have complete access to product lines,

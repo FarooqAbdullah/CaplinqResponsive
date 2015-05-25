@@ -891,7 +891,7 @@ ul {
 @media screen and (min-width:400px) and (max-width:460px)
 {
     .tabs-left{
-        margin-left:28%;
+        /*margin-left:28%;*/
     }
 }
 
@@ -899,21 +899,24 @@ ul {
 @media screen and (min-width:460px) and (max-width:510px)
 {
     .tabs-left{
-        margin-left:20%;
+        /*margin-left:20%;*/
     }
 }
 
 @media screen and (min-width:511px) and (max-width:560px)
 {
     .tabs-left{
-        margin-left:10%;
+        /*margin-left:10%;*/
+    }
+    .col-md-6.topbuttons > div > .dropdown > a + .dropdown-menu {
+        /*width: 450px;*/
     }
 }
 
 @media screen and (min-width:350px) and (max-width:420px)
 {
     .tabs-left{
-        margin-left:42%;
+        /*margin-left:42%;*/
     }
 
     .signinleftcol{
@@ -929,7 +932,7 @@ ul {
 @media screen and (min-width:250px) and (max-width:350px)
 {
     .tabs-left{
-        margin-left:53%;
+        /*margin-left:53%;*/
     }
 
     .signinleftcol{
@@ -987,9 +990,12 @@ h4.signinheading,.passwordforgot, .noaccount {
     margin-bottom:10px;
 }
 
-.btn {
+.signinbutton.btn {
     background-color:maroon;
     color:white;
+}
+.tab-content.sign-in {
+    padding: 10px;
 }
 
 .signinbutton{
@@ -1112,5 +1118,35 @@ ul.signinrightcol{
 
 input.inputsignin:hover{
     color:#ffffcc;
+}
+@media screen and (width:384px) {
+    .col-md-6.topbuttons > div > .dropdown > a + .dropdown-menu {
+        width: 325px;
+    }
+}
+@media screen and (width:320px) {
+    .col-md-6.topbuttons > div > .dropdown > a + .dropdown-menu {
+        width: 260px;
+    }
+}
+@media screen and (width:414px) {
+    .col-md-6.topbuttons > div > .dropdown > a + .dropdown-menu {
+        width: 345px;
+    }
+}
+@media screen and (max-width:375px) and (min-width:250px) {
+    .col-md-6.topbuttons > div > .dropdown > a + .dropdown-menu {
+        width: 260px;
+    }
+}
+@media screen and (max-width:412px) and (min-width: 376px) {
+    .col-md-6.topbuttons > div > .dropdown > a + .dropdown-menu {
+        width: 325px;
+    }
+}
+@media screen and (max-width:568px) and (min-width: 413px) {
+    .col-md-6.topbuttons > div > .dropdown > a + .dropdown-menu {
+        width: 360px;
+    }
 }
 /* tab css End */
