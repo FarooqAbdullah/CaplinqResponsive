@@ -657,18 +657,22 @@ h3.show
 
 .left2box
 	{
-		width:50%;
+		width:48%;
 		float:left;
-		border-left:1px solid white !important;
-	
+		border-bottom:1px solid white !important;
+        border-left:none ;
+        margin-top:0;
+        margin-left:2%;
+
 	}
 	
 	.right2box
 	{
-		width:50%;
+		width:48%;
 		float:right;
-		border-left:1px solid white !important;
-		
+		/*border-bottom:1px solid white !important;*/
+		border-left:none ;
+        margin-left: 2%;
 	}
 	
 }
