@@ -303,7 +303,6 @@ dropdown.search_condition > button {
 	}
 }
 
-
 .dropdown.search_condition {
 
 }
@@ -471,6 +470,13 @@ div.hr {
 }
 
 
+.customForBlog {
+  margin: 0 auto;
+}
+.headerBG {
+  padding: 0 0 10px;
+}
+
 .blog
 {
 	border:1px solid gray;
@@ -479,35 +485,102 @@ div.hr {
 	padding:20px;
 	font-size:12px;
 	}
-	
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
 	
 .headerBG .header {
   background: url(../images/sectionHD.png) repeat-x 0 -58px;
-  height: 58px;
-  padding-bottom: 84px;
-  position: relative;
+  height:60px;
+  border-top-right-radius:10px;
+   border-top-left-radius:10px;
+  	box-shadow:3px 0px 3px gray;
+	width:99.9%;
+ 
 }	
-	
-.headerBG .header .left {
-  float: left;
-  background: url(../images/sectionHD.png) no-repeat 0 1px;
-  width: 17px;
-  height: 57px;
+
+.wpposts.headerBG{
+	border-right:1px solid gray;
+	border-left:1px solid gray;
+   padding:5px;
 }
 
-.headerBG .header .right {
-  float: right;
-  background: url(../images/sectionHD.png) no-repeat right -117px;
-  height: 142px;
-  width: 17px;
+h3.show {
+	color:white;
+  font-size: 30px !important  ;
+  font-weight:lighter !important;
+  margin-left:10px;
+  width:100%;
 }
+
+@media screen and (min-width:270px) and (max-width:320px)
+{
+h3.show {
+	color:white;
+  font-size: 18px !important  ;
+  font-weight:lighter !important;
+}
+
+.headerBG .header {
+	height:40px;
+}
+}
+
+@media screen and (min-width:321px) and (max-width:350px)
+{
+h3.show {
+	color:white;
+  font-size: 20px !important  ;
+  font-weight:lighter !important;
+
+}
+}
+
+@media screen and (min-width:351px) and (max-width:440px)
+{
+h3.show {
+	
+  font-size: 23px !important  ;
+  font-weight:lighter !important;
+  margin-left:5px;
+  margin-top:0px;
+
+}
+
+}
+
 	
 .wppost {
   border-bottom: 1px solid #cccccc;
   padding: 9px;
   padding-bottom: 12px;
+  font-size:12px;
+}
+
+.headerBG .footer div.mid {
+  padding: 0 17px;
 }
 	
+.wppost:hover{
+	background-color:#eeeeee ;
+}
+
+.blogfooter{
+	width:100%;
+	background: url(../images/sectionHD.png) repeat-x 0 -20px;
+	border:1px solid gray;
+	border-top:2px solid gray;
+	border-bottom:none;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	height:30px;
+}	
 	
 
 #Mod91 {
@@ -557,8 +630,6 @@ h3.show
 .upf1 {
     min-height: 145px;
 }
-
-
 
 
 @media screen and (min-width:275px) and (max-width:600px)	

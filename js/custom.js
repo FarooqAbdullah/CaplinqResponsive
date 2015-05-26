@@ -27,9 +27,10 @@ jQuery(document).ready(
 				$(window).scroll(function() {
 					stickyNav();
 					});
-	}
 	
-);
+});
+	
+
 			
 
               
