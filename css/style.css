@@ -10,6 +10,8 @@ body
 	max-height:40%;
 	max-width:80%;
     padding-top: 3px;
+	  background-color: white;
+  border-radius: 6px;
 }
 #slogan
 {
@@ -61,24 +63,47 @@ body
 }
 
 nav.main_navigation {
-  background-color: #c43426;
-  background:linear-gradient(#9D0A0E 43%, #540405 100%);
-  border-color: #c43426;
+  background-color: #FBFBFB;
   border-radius: 0;
   clear: both;
   font-size: 14px;
   margin-bottom:0px;
+  margin-top:1px;
+  box-shadow: 0px 0px 2px #760709;
+  border: 1px solid #760709;
+  border-right: none;
+  border-left: none;
 }
 
+.togglesearchbar
+{
+	background-color:#760709 !important;
+	color:white !important;
+	}
+
+	.btn-header{
+		background-color:#760709 !important;
+		color:white !important;
+		border:none !important;
+		box-shadow:1px 1px 1px #760709;
+	}
+
+
+
+	.btn-header:hover{
+		color:white !important;
+	}
+	
 #bs-example-navbar-collapse-1 ul.nav > li > a {
   position: relative;
   display: block;
   padding: 15px 12px ;
-  color: #fff;
+  color:#760709;
 }
 
 #bs-example-navbar-collapse-1 ul.nav > li.open > a {
     background-color:transparent;
+	color:black;
 }
 #bs-example-navbar-collapse-1 ul.nav > li.open .dropdown-menu li a:hover {
     background: linear-gradient(#9D0A0E 43%, #540405 100%);
@@ -94,6 +119,10 @@ nav.main_navigation .container-fluid {
   border-color: #ddd;
 }
 
+.homebuttonred
+{
+	color:#760709;
+}
 
 
 .header_top {
@@ -266,7 +295,7 @@ dropdown.search_condition > button {
     padding: 10px;
     padding-left: 5px;
     padding-right: 0px;
-    color: #fff;
+    color: #760709;
 }
 .search_focused #search-icon {
     color: #777;
@@ -324,6 +353,11 @@ dropdown.search_condition > button {
 	margin-left:0px;
 	width:100%;
 	}
+	
+	.search_normal.search_focused input.form-control {
+    width: 90% !important;
+    display: inline;
+}
 }
 .search_normal.search_focused input.form-control {
     width: auto;
@@ -1285,7 +1319,7 @@ input.inputsignin:hover{
 }
 @media screen and (min-width:768px) and (max-width:1025px) {
     .search_normal.search_focused input.form-control {
-        width: 150px;
+        width: 140px;
     }
 }
 @media  screen and (min-width:900px) and (max-width: 1025px) {
