@@ -10,8 +10,8 @@ body
 	max-height:40%;
 	max-width:80%;
     padding-top: 3px;
-	  background-color: white;
-  border-radius: 6px;
+    border-radius: 6px;
+   
 }
 #slogan
 {
@@ -19,6 +19,7 @@ body
 	margin-left:5px;
     max-height: 50px;
 	/*margin-top:20px;*/
+	color:black;
 }
 #slogan label {
     font-weight: lighter;
@@ -31,9 +32,8 @@ body
 {
 	height:36px;
 	text-align:center;
-	margin-bottom:5px;
-	margin-top:5px;
-	
+	/*margin-bottom:5px;*/
+	/*margin-top:5px;*/
 }
 
 #buttonclick > p
@@ -41,16 +41,37 @@ body
 	margin-top:-5px;
 }
 
+.signbutton{
+	  height: 50px !important;
+  line-height: 2;
+  font-size: 16px;
+}
+}
 
+select.btn-header{
+	width:80px !important;
+}
 
 #select1
 {
-	width:100px;
+	width:100px ;
 	height:35px;
 	margin-left:2px;
-	margin-top:5px;
+	/*margin-top:5px;*/
 }
 
+
+.topheader{
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(left, #ffffff 0%, #e5e5e5 52%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(52%,#e5e5e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #ffffff 0%,#e5e5e5 52%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #ffffff 0%,#e5e5e5 52%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #ffffff 0%,#e5e5e5 52%); /* IE10+ */
+background: linear-gradient(to right, #ffffff 0%,#e5e5e5 52%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 */
+
+}
 
 .sticky {
     position: fixed;
@@ -68,45 +89,68 @@ nav.main_navigation {
   clear: both;
   font-size: 14px;
   margin-bottom:0px;
-  margin-top:1px;
-  box-shadow: 0px 0px 2px #760709;
-  border: 1px solid #760709;
   border-right: none;
   border-left: none;
+  border-top:none;
 }
 
 .togglesearchbar
 {
-	background-color:#760709 !important;
-	color:white !important;
+	background-color:transparent !important;
+	color:black!important;
 	}
 
 	.btn-header{
-		background-color:#760709 !important;
-		color:white !important;
+		background-color:#e1e1e1 !important;
+		color:black !important;
 		border:none !important;
-		box-shadow:1px 1px 1px #760709;
+		border-radius:0px !important;
+		height:100% !important;
 	}
-
 
 
 	.btn-header:hover{
 		color:white !important;
+		background-color:#D3D3D3 !important;
 	}
 	
 #bs-example-navbar-collapse-1 ul.nav > li > a {
   position: relative;
   display: block;
-  padding: 15px 12px ;
+  padding: 15px 2px ;
   color:#760709;
 }
+
+@media (min-width: 1026px)
+{
+.navbar>.container-fluid .navbar-brand {
+  margin-left: -36px !important;
+}
+}
+
+@media screen and (min-width:910px)
+{
+#bs-example-navbar-collapse-1 ul.nav > li > a
+{
+	padding:15px 5px !important;
+}
+}
+
 
 #bs-example-navbar-collapse-1 ul.nav > li.open > a {
     background-color:transparent;
 	color:black;
 }
 #bs-example-navbar-collapse-1 ul.nav > li.open .dropdown-menu li a:hover {
-    background: linear-gradient(#9D0A0E 43%, #540405 100%);
+   background: #a03f38; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #a03f38 21%, #a03f38 21%, #a33b32 27%, #9b0000 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(21%,#a03f38), color-stop(21%,#a03f38), color-stop(27%,#a33b32), color-stop(100%,#9b0000)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, #a03f38 21%,#a03f38 21%,#a33b32 27%,#9b0000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, #a03f38 21%,#a03f38 21%,#a33b32 27%,#9b0000 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, #a03f38 21%,#a03f38 21%,#a33b32 27%,#9b0000 100%); /* IE10+ */
+background: radial-gradient(ellipse at center, #a03f38 21%,#a03f38 21%,#a33b32 27%,#9b0000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a03f38', endColorstr='#9b0000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
     color: #fff;
 }
 
@@ -179,13 +223,15 @@ dropdown.search_condition > button {
 .col-md-6.topbuttons > div > select,
 .col-md-6.topbuttons > div > .dropdown,
 .col-md-6.topbuttons > div > button {
-    min-height: 44px;
-    background-color: #DDD;
-    border: 1px solid #CCC;
-    border-radius: 5px;
-    margin-top: 3px !important;
-    margin-bottom: 3px !important;
-    font-size: 13px;
+   min-height: 44px;
+  /* background-color: #DDD; */
+
+  /* border-radius: 5px; */
+  margin-top: 2px !important;
+  margin-bottom: 0px;
+  font-size: 13px;
+  border-top: none;
+  border-bottom: none;
 }
 
 .col-md-6.topbuttons > div > .dropdown {
@@ -217,7 +263,7 @@ dropdown.search_condition > button {
 .col-md-6.topbuttons > div > .dropdown > a {
     max-height: 44px;
     background-color: #DDD;
-    line-height: 14px;
+    line-height: 17px;
     border: none;
     font-size: 13px;
     color: #000;
@@ -345,6 +391,7 @@ dropdown.search_condition > button {
 	margin-left:50px;
 	}
 }
+
 
 @media screen and (min-width:250px) and (max-width:764px)
 {
@@ -976,8 +1023,30 @@ ul {
 }
 @media screen and (min-width: 1026px) {
     nav.main_navigation .container-fluid {
-        width: 875px;
+        width: 925px;
     }
+}
+
+
+@media (min-width: 768px) and (max-width:1022px)
+{
+.navbar>.container-fluid .navbar-brand {
+  margin-left: -26px;
+  }
+}
+
+@media screen and (max-width: 822px) and (min-width: 768px)
+{
+	.search_normal.search_focused input.form-control{
+		width:95px !important;
+	}
+}
+
+@media screen and (min-width:823px) and (max-width:900px)
+{
+	.search_normal.search_focused input.form-control{
+		width:150px;
+	}
 }
 
 @media screen and (max-width: 1025px) and (min-width: 768px)
@@ -1022,10 +1091,11 @@ ul {
 
 @media screen and (max-width: 767px) and (min-width:250px) {
     .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-        color: #fff;
+        color:black;
     }
     #bs-example-navbar-collapse-1 ul.nav > li.open .dropdown-menu li a:hover {
         background: none;
+		color:black;
     }
     .dropdown-submenu:hover>.dropdown-menu {
         padding-left: 25px;
@@ -1037,9 +1107,9 @@ ul {
 	}
 }
 
-@media (min-width: 768px) and (max-width:910px) {
+@media (min-width: 768px) and (max-width:850px) {
     #bs-example-navbar-collapse-1 ul.nav > li > a {
-        padding: 15px 8px !important;
+        padding: 15px 2px !important;
     }
 }
 @media screen and (max-width:991px) and (min-width:250px) {
@@ -1319,12 +1389,12 @@ input.inputsignin:hover{
 }
 @media screen and (min-width:768px) and (max-width:1025px) {
     .search_normal.search_focused input.form-control {
-        width: 140px;
+        width: 150px;
     }
 }
 @media  screen and (min-width:900px) and (max-width: 1025px) {
     nav.main_navigation .container-fluid {
-        width: 825px;
+        width: 880px;
     }
 }
 /* tab css End */

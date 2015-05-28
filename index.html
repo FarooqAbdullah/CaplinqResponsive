@@ -12,7 +12,7 @@
 <body>
 <header class="header_wrapper">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row topheader">
             <div class="col-md-12">
                 <div class="col-md-6 col-xs-12">
                         <img class="img-responsive" id="mainlogo" src="images/logo.png">
@@ -30,16 +30,26 @@
                                 <option>4</option>
                         </select>
 
-                        <button id="buttonclick" class="btn btn-header">USD</button>
+                        <button id="buttonclick" class="btn btn-header">
+						<span><b>$</b></span>
+						USD
+						</button>
 
-                        <button id="buttonclick" class="btn btn-header">Pakistan</button>
+                        <button id="buttonclick" class="btn btn-header">
+						<span class="glyphicon glyphicon-flag"></span>
+						Pakistan
+						</button>
 
-                        <button id="buttonclick" class="btn btn-header">My Cart</button>
+                        <button id="buttonclick" class="btn btn-header">
+						<span class="glyphicon glyphicon-shopping-cart"></span>
+						My Cart
+						</button>
 
                         <div class="dropdown">
-                            <a class="dropdown-toggle btn btn-header" data-toggle="dropdown" href="#">
-                                Hello. Sign In, <br>
-                                <b>Your Account <span class="caret"></span></b>
+                            <a class="dropdown-toggle btn btn-header " data-toggle="dropdown" href="#">
+                                 <b class="signbutton">Sign In 
+                                 <span class="caret"></span>
+								 </b>
                             </a>
                             <ul class="dropdown-menu ">
                                 <div class="arrow-up"></div>
@@ -157,7 +167,8 @@
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                Products
+                                <span class="glyphicon glyphicon-tags"></span>
+								&nbsp;Products
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
@@ -258,7 +269,8 @@
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                Services
+                                <span class="glyphicon glyphicon-briefcase"></span>
+								&nbsp;Services
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
@@ -283,8 +295,9 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                Applications
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">                         
+								<span class="glyphicon glyphicon-phone"></span>
+								&nbsp;Applications
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
@@ -328,7 +341,8 @@
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                Resources
+								<span class="glyphicon glyphicon-hdd"></span>
+							   &nbsp;Resources
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
@@ -343,8 +357,10 @@
                                 <li><a href="#">Roll Calculator</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Forum</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-book"></span>&nbsp;Blog</a></li>
+                        <li><a href="#">
+						<span class="glyphicon glyphicon-user"></span>
+						&nbsp;Forum</a></li>
                     </ul>
                     <form class="navbar-form navbar-left" role="search">
                         <div class="form-group search_normal">
